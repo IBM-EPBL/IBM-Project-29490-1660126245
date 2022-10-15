@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital enquires Bot</title>
+</head>
+<body>
+    WELCOME TO HOSPITAL CHATBOT!
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "3052c371-e736-4f66-a1b4-7630200ece6a", // The ID of this integration.
+          region: "jp-tok", // The region your integration is hosted in.
+          serviceInstanceID: "d8f44d27-bfbc-439e-b73e-ce2e30d0c235", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
